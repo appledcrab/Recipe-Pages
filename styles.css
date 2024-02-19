@@ -11,17 +11,33 @@ body {
 
 .container {
     width: calc(100% - 40%);
-    height: 100vh;
+    height: 100%;
+    background-color: white;
+
 }
 
 .nav{
 
 }
-ul{
-    list-style: none;
+.card-front{
+    position: relative;
+}
+.card-center-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgb(81, 163, 49);
+    padding: 5px;
+}
+.cuisine-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.2;
 }
 .nav ul {
-    /* CSS properties here */
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -29,6 +45,24 @@ ul{
     align-items: center;
     padding: 0;
     margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.main-cuisine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
 .header{
