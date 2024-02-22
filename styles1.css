@@ -18,14 +18,11 @@ body {
 
 }
 
+.topic{
+    color: rgb(5, 110, 5);
+    font-weight: bold;
+  }
 
-.material-heart {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
 
 .card-flip{
     background-color: transparent;
@@ -77,15 +74,6 @@ body {
     object-fit: cover;
     opacity: 0.2;
 }
-.nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    gap:20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
 .main{
     display: flex;
     flex-direction: column;
@@ -114,6 +102,25 @@ body {
     text-align: center;
     height: 60px;
     padding: 10px;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.nav ul li a:hover, .site-name:hover {
+    text-decoration: none;
+    color: rgb(31, 87, 31);
+    scale: .9;
 }
 @media (max-width: 768px) {
     .container {
