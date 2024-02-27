@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="styles1.css">
-    <title>Navigation</title>
+	<link rel = "icon" href = "images/spoonandladle.png">
+    <title>Cuisine Home</title>
 </head>
 <body>
     <div = class="container">
@@ -14,16 +15,26 @@
             <a href="../../home.html"> <img src="./images/logo.png" style="border-radius: 10px; width: 80px; height: auto;"/></a>
             <div class="nav">
                 <ul>
-                    <li><a href="../../home.html">Home</a></li>
-                    <li><a href="../../index.html">Cuisines</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Cuisines</a></li>
+                    <li><a href="intro.html">Contact</a></li>
                 </ul>
             </div>
         </div>
         
         <div class="main">
             <h2 class="topic">Sort by Cuisine</h2>
-            <p>Click on a cuisine to see recipes</p>
+            <p>Scroll down for all our recipes, or you can filter the recipes below.</p>
+			<label for = "tags">What would you like to make?</label>
+			<select name = "tags" id = "tags"  onchange="location = this.value;">
+				<option value = "index.html">Take me home!</option>
+				<option value = "breakfast.html">Breakfast</option>
+				<option value = "lunch.html">Lunch</option>
+				<option value = "dinner.html">Dinner</option>
+				<option value = "streetfood.html">Street Food</option>
+				<option value = "dessert.html">Dessert</option>
+				<option value = "spicy.html">Spicy</option>
+			</select>
             <div class="main-cuisine">
                 <a href="cuisines/greek/greek-page.html">
                 <div class="card-flip">
