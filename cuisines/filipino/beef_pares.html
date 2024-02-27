@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Pares</title>
+
+    <link rel="stylesheet" href="../recipe-page.css">
+    <style>
+        .calories:before {
+        --grams:564; /* Input the grams of calories here */
+        --max-grams: 2000; /* Input the maximum grams here */
+        }
+
+        .fat:before {
+        --grams: 18; /* Get the grams value from data attribute */
+        --max-grams: 67; /* Input the maximum grams here */
+        }
+
+        .carbs:before {
+        --grams: 64; /* Input the grams of carbs here */
+        --max-grams: 200; /* Input the maximum grams here */
+        }
+
+        .protein:before {
+        --grams: 36; /* Input the grams of protein here */
+        --max-grams: 150; /* Input the maximum grams here */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <a href="../../home.html" style="color: white; text-decoration: none;">
+                <h1 class="site-name">Spoon and Ladle</h1>
+            </a>
+            <a href="../../home.html"><img src="../../images/logo.png"
+                    style="border-radius: 10px; width: 80px; height: auto;" /></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="../../index.html">Cuisines</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="recipe-details">
+                <h1><span class="topic">Beef Pares</span></h1>
+                <div class="recipe-details">
+                    <p><span class="topic">Cuisine:</span> Filipino (Street Food)</p>
+                    <p><span class="topic">Rating:</span> ⭐⭐⭐⭐⭐</p>
+                    <p><span class="topic">Calories:</span> 400 per serving</p>
+                    <p><span class="topic">Total Time:</span> 3 hours</p>
+                    <p><span class="topic">Prep Time:</span> 1 hour 30 minutes</p><br>
+                    <div class="dashboard">
+                        <div class="progress-bar">
+                          <span class="topic">488 Calories:&#9;</span>
+                          <div class="bar calories"></div>
+                        </div>
+                        <div class="progress-bar">
+                          <span class="topic">12g Fat:&#9;</span>
+                          <div class="bar fat"></div> 
+                        </div>
+                        <div class="progress-bar">
+                          <span class="topic">14g Carbs:&#9;</span>
+                          <div class="bar carbs"></div>
+                        </div>
+                        <div class="progress-bar">
+                          <span class="topic">29g Protein:&#9;</span>
+                          <div class="bar protein"></div>
+                        </div>
+                    </div>
+		            <p>Beef pares is a Filipino dish that is commonly found in diners and street vendors. Best paired with rice, this is a savory street 
+					dish that packs a flavor punch. The tender beef cooked in a delicious spice blend makes it a hit! Enjoy!</p>
+                    <div class="recipe-tags">
+                        <!-- Choose which one ...not all of them.. -->              
+                        <span>#Dinner</span>
+                        <span>#Entree</span>
+                    </div>
+
+                    <a class="button" href="#ingredient-list">Jump to Ingredients</a>
+                </div>
+                <img src="beef_pares.jpg" class="recipe-image">
+
+                <div class="recipe-content">
+                    <h3 id="ingredient-list"><span class="topic">Got Everything You Need?</span></h3>
+                    <ul class="ingred-list">
+                        <li><input type="checkbox"><label for="opt-in">&frac12; kilo beef brisket</label></li>
+                        <li><input type="checkbox"><label for="opt-in">&frac14; cup soy sauce</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 tsp black pepper</label></li>
+						<li><input type="checkbox"><label for="opt-in">&frac14; cup sugar</label></li>
+                        <li><input type="checkbox"><label for="opt-in">2 tbsp ginger</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 clove garlic, crushed</label></li>
+						<li><input type="checkbox"><label for="opt-in">1 medium onion, chopped</label></li>
+                        <li><input type="checkbox"><label for="opt-in">4 cups beef broth</label></li>
+                        <li><input type="checkbox"><label for="opt-in">2 pieces star anise</label></li>
+						<li><input type="checkbox"><label for="opt-in">&frac14; cup water</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 tsp flour (optional)</label></li>
+                        <li><input type="checkbox"><label for="opt-in">Sliced fried garlic (optional)</label></li>
+						<li><input type="checkbox"><label for="opt-in">Sliced scallions</label></li>
+                    </ul>
+                    <h3><span class="topic">Instructions:</span></h3>
+                    <ol>
+                        <li>Boil the brisket about 1 &frac12; hours until tender (depends on thickness of meat). Slow cooking is best.</li>
+                        <li>Blend the soy sauce, black pepper, and sugar. Marinade the brisket in this mixture for 30 minutes.</li>
+                        <li>Saute the ginger, garlic, and onion. While doing this, drain the marinade from the beef and saute the beef for 5-10 minutes. Add the beef broth and simmer.</li>
+						<li>Add remaining marinade and simmer for 5 more minutes. Add star anise.</li>
+						<li>Once the meat is very tender, dissolve the flour in the water and mix into beef while stirring and simmer until flour taste is gone(this is for a stickier sauce).</li>
+						<li>Garnish with garlic and scallions as desired. Serve with rice.</li>
+                    </ol>
+                </div>
+				<h3><span class="topic">Gallery:</span></h3>
+				<div class = 'gallery'>
+					<img src="beef_pares1.jpg" class = 'galleryimages'>
+					<img src="beef_pares2.jpg" class = 'galleryimages'>
+					<img src="beef_pares3.jpg" class = 'galleryimages'>
+					<img src="beef_pares4.jpg" class = 'galleryimages'> 
+				</div>
+            </div>
+            <div class="recipe-sidebar">
+                <div class="sidebar">
+                    <h2><span class="topic">Other Good Recipes</span></h2>
+                    <ul>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

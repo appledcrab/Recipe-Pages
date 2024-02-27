@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopes</title>
+
+    <link rel="stylesheet" href="../recipe-page.css">
+    <style>
+        .calories:before {
+        --grams:62; /* Input the grams of calories here */
+        --max-grams: 2000; /* Input the maximum grams here */
+        }
+
+        .fat:before {
+        --grams: 1; /* Get the grams value from data attribute */
+        --max-grams: 67; /* Input the maximum grams here */
+        }
+
+        .carbs:before {
+        --grams: 12; /* Input the grams of carbs here */
+        --max-grams: 200; /* Input the maximum grams here */
+        }
+
+        .protein:before {
+        --grams: 2; /* Input the grams of protein here */
+        --max-grams: 150; /* Input the maximum grams here */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <a href="../../home.html" style="color: white; text-decoration: none;">
+                <h1 class="site-name">Spoon and Ladle</h1>
+            </a>
+            <a href="../../home.html"><img src="../../images/logo.png"
+                    style="border-radius: 10px; width: 80px; height: auto;" /></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="../../index.html">Cuisines</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="recipe-details">
+                <h1><span class="topic">Sopes</span></h1>
+                <div class="recipe-details">
+                    <p><span class="topic">Cuisine:</span>Mexican</p>
+                    <p><span class="topic">Rating:</span> ⭐⭐⭐⭐⭐</p>
+                    <p><span class="topic">Calories:</span> 62 per serving</p>
+                    <p><span class="topic">Total Time:</span>55 minutes</p>
+                    <p><span class="topic">Prep Time:</span>40 minutes</p><br>
+                    <div class="dashboard">
+                        <div class="progress-bar">
+                          <span class="topic">62 Calories:&#9;</span>
+                          <div class="bar calories"></div>
+                        </div>
+                        <div class="progress-bar">
+                          <span class="topic">1g Fat:&#9;</span>
+                          <div class="bar fat"></div> 
+                        </div>
+                        <div class="progress-bar">
+                          <span class="topic">12g Carbs:&#9;</span>
+                          <div class="bar carbs"></div>
+                        </div>
+                        <div class="progress-bar">
+                          <span class="topic">2g Protein:&#9;</span>
+                          <div class="bar protein"></div>
+                        </div>
+                    </div>
+		            <p>Sopes are a popular street snack in Mexico. The corn flour shell acts a little bowl that can be piled high with whatever 
+					toppings you like. Our version brings you the best combination of protein, cheese, vegetables, and flavor! Enjoy!</p>
+                    <div class="recipe-tags">
+                        <!-- Choose which one ...not all of them.. -->              
+                        <span>#StreetFood</span>
+                        <span>#Entree</span>
+                    </div>
+
+                    <a class="button" href="#ingredient-list">Jump to Ingredients</a>
+                </div>
+                <img src="sopes.png" class="recipe-image">
+
+                <div class="recipe-content">
+                    <h3 id="ingredient-list"><span class="topic">Got Everything You Need?</span></h3>
+                    <ul class="ingred-list">
+                        <li><input type="checkbox"><label for="opt-in">2 cups masa harina</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 tsp salt</label></li>
+                        <li><input type="checkbox"><label for="opt-in">4 whole cloves</label></li>
+						<li><input type="checkbox"><label for="opt-in">1 &frac12; cups water</label></li>
+                        <li><input type="checkbox"><label for="opt-in">&frac13; cup melted lard</label></li>
+                        <li><input type="checkbox"><label for="opt-in">2 cups vegetable oil</label></li>
+						<li><input type="checkbox"><label for="opt-in">1 cup refried beans</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 &frac12; cups shredded pork seasoned to taste</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 &frac12; cups finely shredded lettuce</label></li>
+						<li><input type="checkbox"><label for="opt-in">&frac14; cup diced white onion</label></li>
+                        <li><input type="checkbox"><label for="opt-in">1 chopped avocado</label></li>
+                        <li><input type="checkbox"><label for="opt-in">&frac12; cup salsa</label></li>
+						<li><input type="checkbox"><label for="opt-in">&frac12; cup Mexican cream</label></li>
+						<li><input type="checkbox"><label for="opt-in">&frac12; cup crumbled queso fresco</label></li>
+						<li><input type="checkbox"><label for="opt-in">Additional toppings as desired</label></li>
+                    </ul>
+                    <h3><span class="topic">Instructions:</span></h3>
+                    <ol>
+                        <li>In a large bowl, whisk the masa harina and salt. Stir in the water and lard. Knead dough until smooth (but not sticky), then form it into a ball and rest it for 5 minutes.</li>
+                        <li>Place dough on cutting board, flatten, and cut into 12 pieces like you would cut a pizza.</li>
+                        <li>Roll each piece of dough into a ball, then flatten into a 3 &frac12; inches wide disk. Transfer to baking sheet lined with parchment paper.</li>
+						<li>Heat skillet to 350°F. Cook 4 sopes at a time for 60 seconds, then flip and cook for 30 more seconds.</li>
+						<li>Transfer sopes to flat surface and let cool for 45 seconds. Pinch each sope around the edges to create a &frac12; inch thick rim.</li>
+						<li>Put vegetable oil in skillet and heat to 350°F. Fry 4-6 sopes at a time for 1-2 minutes on each side. Transfer to baking sheet lined with paper towels.</li>
+						<li>Spread a layer of refried beans on each sope.  Top with meat, lettuce, onions, avocado, salsa, crema, cheese and any other desired toppings. Serve warm.</li>
+                    </ol>
+                </div>
+				<h3><span class="topic">Gallery:</span></h3>
+				<div class = 'gallery'>
+					<img src="sopes1.jpg" class = 'galleryimages'>
+					<img src="sopes2.jpg" class = 'galleryimages'>
+					<img src="sopes3.jpg" class = 'galleryimages'>
+					<img src="sopes4.jpeg" class = 'galleryimages'> 
+				</div>
+            </div>
+            <div class="recipe-sidebar">
+                <div class="sidebar">
+                    <h2><span class="topic">Other Good Recipes</span></h2>
+                    <ul>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <!-- add the link to the recipe -->
+                                <div class="recipe-card">
+                                    <div class="recipe-card-inner">
+                                        <div class="recipe-card-front">
+                                            <div class="side-recipe-container">
+                                                <img src="http://placekitten.com/300/400"
+                                                    style="width:100%;height:220px; object-fit: cover;">
+                                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                                Recipe Name
+                                            </div>
+                                        </div>
+
+                                        <div class="recipe-card-back" align="center">
+                                            <h1>Recipe Name</h1>
+                                            <p>Rating: ⭐⭐⭐⭐</p>
+                                            <p>Calories: 300 per serving</p>
+                                            <p>Total Time: 45 minutes</p>
+                                            <p>Prep Time: 15 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
