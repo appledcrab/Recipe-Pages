@@ -69,21 +69,19 @@ body {
 }
 
 .contact {
-    display: flex;
-    background-color: ;
+    background-color: white;
 
 }
 
 .cntcticons {
-
+    display: flex;
+    position: relative;
 }
 
 .cntcticons img {
+    width: 25px;
+    height: 25px;
     position: absolute;
-    top: 25%;
-    left: 25%;
-
-
 }
 
 .nav {
