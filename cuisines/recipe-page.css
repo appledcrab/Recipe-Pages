@@ -141,7 +141,6 @@ body {
   .topic{
     color: rgb(5, 110, 5);
     font-weight: bold;
-	display: flex;
   }
 
   .ingred-list{
@@ -226,22 +225,4 @@ body {
 .galleryimages:hover {
   transform: scale(1.1);
   transition-duration: 500ms;
-}
-
-ul li{
-  color: #FF0000;
-}
-
-ul li:hover {
-  transform: scale(1.05);
-  box-shadow: 2px 2px 2px gray;
-}
-
-input:checked {
-  outline: 1px solid green;
-}
-
-input:checked + label {
-  color: green;
-  text-decoration:line-through;
 }

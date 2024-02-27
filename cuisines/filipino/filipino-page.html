@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Cuisine</title>
+    <link rel="stylesheet" href="../../styles1.css">
+    <style>
+        /* From Michael's commit */
+.recipe-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.recipe-card:hover .recipe-card-inner {
+  transform: rotateY(180deg);
+  animation-name: colorchange;
+  animation-duration: 2s;
+}
+
+.recipe-card-front, .recipe-card-back {
+  background-color: rgb(123, 167, 48);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.recipe-card-front {
+  text-align: left;
+  /* padding: 10px; */
+}
+
+.recipe-card-back {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.recipe-card-inner {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a  style="color: white; text-decoration: none;" href="../../home.html"><h1 class="site-name">Spoon and Ladle</h1></a>
+            <a href="../../home.html"> <img src="../../images/logo.png" style="border-radius: 10px; width: 80px; height: auto;"/></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="../../index.html">Cuisines</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="main">
+            <h2 class="topic">Filipino Cuisine</h2>
+            <p>Filipino cuisine is a melting pot of flavors, influenced by Spanish, Chinese, Malay, and American culinary traditions. From savory adobo to tangy sinigang, it offers a diverse range of dishes that reflect the country's rich history and vibrant culture. Whether enjoying hearty dishes like kare-kare or indulging in sweet treats like halo-halo, Filipino cuisine is a celebration of bold flavors, fresh ingredients, and communal dining experiences that bring families and friends together in joyful culinary exploration.</p>
+            <div class="main-cuisine">
+			<a href = 'filipinocuisine.html'>
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="http://placekitten.com/300/400"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Recipe Name</span> ⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Recipe Name</h1>
+                            <p>Rating: ⭐⭐⭐⭐</p>
+                            <p>Calories: 300 per serving</p>
+                            <p>Total Time: 45 minutes</p>
+                            <p>Prep Time: 15 minutes</p>
+                        </div>
+                    </div>
+                </div>
+				</a>
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="http://placekitten.com/300/400"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Recipe Name</span> ⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Recipe Name</h1>
+                            <p>Rating: ⭐⭐⭐⭐</p>
+                            <p>Calories: 300 per serving</p>
+                            <p>Total Time: 45 minutes</p>
+                            <p>Prep Time: 15 minutes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="http://placekitten.com/300/400"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Recipe Name</span> ⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Recipe Name</h1>
+                            <p>Rating: ⭐⭐⭐⭐</p>
+                            <p>Calories: 300 per serving</p>
+                            <p>Total Time: 45 minutes</p>
+                            <p>Prep Time: 15 minutes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="http://placekitten.com/300/400"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Recipe Name</span> ⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Recipe Name</h1>
+                            <p>Rating: ⭐⭐⭐⭐</p>
+                            <p>Calories: 300 per serving</p>
+                            <p>Total Time: 45 minutes</p>
+                            <p>Prep Time: 15 minutes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more recipe cards here -->
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
