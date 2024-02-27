@@ -65,7 +65,7 @@ body {
 
 .cbicons img {
     width: calc(20% - 10px);
-    height: auto;
+    height: 150px;
 }
 
 .contact {
