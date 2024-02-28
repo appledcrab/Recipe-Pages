@@ -30,18 +30,6 @@ body {
   height: 300px;
   perspective: 1000px;
 }
-.card-content{
-    position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.card-flip:hover .card-content {
-    transform: rotateY(180deg);
-  }
 
   .card-front, .card-back{
     position: absolute;
@@ -53,12 +41,13 @@ body {
 .card-front{
     position: relative;
 }
-.card-back{
-    
-    background-color: aqua;
-  transform: rotateY(180deg);
-
+.card-flip{
+    border:5px solid white;
 }
+.card-flip:hover{
+    border: 5px solid rgb(81, 163, 49);
+}
+
 .card-center-txt{
     position: absolute;
     top: 50%;
@@ -135,4 +124,18 @@ body {
 
 .info {
   text-align: center;
+}
+
+#tags {
+  position: relative;
+  font-family: "Yatra One", system-ui;
+  width: 200px;
+  background-color: rgb(123, 167, 48);
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+#tags option:hover {
+  background-color: rgb(106, 108, 216);
 }
