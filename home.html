@@ -1,52 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="homeprj.css">
+    <link rel="stylesheet" href="homeprj.css">
     <title>Spoon and Ladle</title>
+    <style>
+        .recipe-card {
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-card:hover .recipe-card-inner {
+            transform: rotateY(180deg);
+            animation-name: colorchange;
+            animation-duration: 2s;
+        }
+
+        .recipe-card-front,
+        .recipe-card-back {
+            background-color: rgb(123, 167, 48);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .recipe-card-front {
+            text-align: left;
+            /* padding: 10px; */
+        }
+
+        .recipe-card-back {
+            transform: rotateY(180deg);
+            color: white;
+        }
+
+        .recipe-card-inner {
+            /* position: relative; */
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+            /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+        }
+    </style>
 </head>
+
 <body>
     <div class="heading">
-        <img src="spoonandladle.png">
-        <a href="../../home.html"><h1>Spoon and Ladle</h1></a>
+        <img src="images/logo.png" style="border-radius: 20px;">
+        <a href="../../home.html">
+            <h1>Spoon and Ladle</h1>
+        </a>
     </div>
     <div class="nav">
         <ul>
             <li><a href="../../home.html">Home</a></li>
             <li><a href="../../index.html">Cuisines</a></li>
-            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../intro.html">Contact</a></li>
         </ul>
     </div>
-    
+
     <div class="showcase">
         <div class="prodview">
-            <h2>Recipe of the Day</h2>
-            <img src="alfredo.jpg">
-            <p class="recipedesc">Indulge in the rich and creamy flavors of our Shrimp Alfredo. 
-                Succulent shrimp, tender fettuccine pasta, 
-                and a velvety Alfredo sauce come together to create a luxurious dining experience. 
-                Each bite is a harmonious blend of savory garlic, smooth Parmesan cheese, 
-                and perfectly cooked shrimp, delivering a satisfying and flavorful dish that's sure to impress. 
-                Whether it's a cozy dinner for two or a special gathering with friends and family,
-                 our Shrimp Alfredo is the perfect choice for a memorable mea</p>
+            <div>
+                <h1 class="topic" style="font-size: 50px;">Recipe of the Day - Beef Pares</h1>
+                <p class="recipedesc">Indulge in the rich and creamy flavors of our Shrimp Alfredo.
+                    Bring all the delicious flavors and aroma of this Filipino favorite roadside eats right into your
+                    kitchen with this easy Beef Pares recipe! A three-in-one dish of tender savory braised beef chunks
+                    served with fried garlic rice and a steaming bowl of clear soup. It is a hearty meal your family
+                    will surely enjoy!</p>
+            </div>
+            <div style="align-self: center; display: flex; flex-direction: column; gap:20px;">
+                <a href="cuisines/filipino/beef_pares.html">
+                    <div style="width: 90%; text-align: center; font-size: 25px;" class="featured-continue">See the
+                        Recipe</div>
+                </a>
+                <img src="./cuisines/filipino/beef_pares.jpg">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="cuisinebar">
+        <div class="cbicons">
+            <!-- <a href="american.html"><img src="images/american.jpg">American</a>
+            <a href="italian.html"><img src="images/italian.jpg">Italian</a><a href="mexican.html"><img
+                    src="images/mexican.jpg">Mexican</a>
+            <a href="chinese.html"><img src="images/chinese.jpg">Chinese</a>
+            <a href="cuisines.html"><img src="images/more.png">More...</a> -->
+            <a href="cuisines/american/chicken_waffles.html">
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="cuisines/american/chicken_waffle.jpg"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Chicken and Waffles</span> ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Chicken and Waffles</h1>
+                            <p>Rating: ⭐⭐⭐⭐⭐</p>
+                            <p>Calories: 500 per serving</p>
+                            <p>Total Time: 12 hours</p>
+                            <p>Prep Time: 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="cuisines/greek/loukoumades.html">
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="cuisines/greek/loukoumades.jpg"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Loukoumades</span> ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Loukoumades</h1>
+                            <p>Rating: ⭐⭐⭐⭐⭐</p>
+                            <p>Calories: 500 per serving</p>
+                            <p>Total Time: 12 hours</p>
+                            <p>Prep Time: 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="cuisines/italian/tortellini_soup.html">
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="cuisines/italian/tortellini_soup.jpg"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Tortellini Soup</span> ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Tortellini Soup</h1>
+                            <p>Rating: ⭐⭐⭐⭐⭐</p>
+                            <p>Calories: 500 per serving</p>
+                            <p>Total Time: 12 hours</p>
+                            <p>Prep Time: 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="cuisines/chinese/big_plate_chicken.html">
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="cuisines/chinese/big_plate_chicken.jpg"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Big Plate Chicken</span> ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Big Plate Chicken</h1>
+                            <p>Rating: ⭐⭐⭐⭐⭐</p>
+                            <p>Calories: 500 per serving</p>
+                            <p>Total Time: 12 hours</p>
+                            <p>Prep Time: 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- <a href="yaksik.html">
+                <div class="recipe-card-inner">
+                    <div class="recipe-card-front">
+                        <div class="side-recipe-container">
+                            <img src="yaksik.jpg"
+                                style="width:300px;height:300px; object-fit: cover;">
+                           
+                            <span class="topic">Yaksik</span> ⭐⭐⭐⭐⭐
+                        </div>
+                    </div>
+
+                    <div class="recipe-card-back" align="center">
+                        <h1>Yaksik</h1>
+                        <p>Rating: ⭐⭐⭐⭐⭐</p>
+                        <p>Calories: 439 per serving</p>
+                        <p>Total Time: 1 hour 10 minutes</p>
+                        <p>Prep Time: 10 minutes</p>
+                    </div>
+                </div>
+            </a> -->
+            <a href="cuisines/korean/yaksik.html">
+                <div class="recipe-card">
+                    <div class="recipe-card-inner">
+                        <div class="recipe-card-front">
+                            <div class="side-recipe-container">
+                                <img src="cuisines/korean/yaksik.jpg"
+                                    style="width:300px;height:300px; object-fit: cover;">
+                                <!-- add the image link (dont worry about size b/c of the object-fit)-->
+                                <span class="topic">Yaksik</span> ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+
+                        <div class="recipe-card-back" align="center">
+                            <h1>Yaksik</h1>
+                            <p>Rating: ⭐⭐⭐⭐⭐</p>
+                            <p>Calories: 500 per serving</p>
+                            <p>Total Time: 12 hours</p>
+                            <p>Prep Time: 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
         </div>
     </div>
 
-        <div class="cuisinebar">
-            <div class="cbicons">                
-                <a href="american.html"><img src="images/american.jpg">American</a>
-                <a href="italian.html"><img src="images/italian.jpg">Italian</a><a href="mexican.html"><img src="images/mexican.jpg">Mexican</a>                            
-                <a href="chinese.html"><img src="images/chinese.jpg">Chinese</a>                            
-                <a href="cuisines.html"><img src="more.png">More...</a>
-            </div>
+    <div class="contact">
+        <div class="cntcticons">
+            <a href="gmail.com"><img src="images/email.jpg"></a>
+            <a href="facebook.com"><img src="images/facebook.jpg"></a>
+            <a href="instagram.com"><img src="images/instagram.jpg"></a>
+            <a href="../../contact.html">Contact</a>
         </div>
-
-        <div class="contact">
-            <div class="cntcticons">
-                <a href="gmail.com"><img src="images/email.jpg"></a>
-                <a href="facebook.com"><img src="images/facebook.jpg"></a>
-                <a href="instagram.com"><img src="images/instagram.jpg"></a>
-                <a href="../../contact.html">Contact</a>
-            </div>
-        </div>
+    </div>
