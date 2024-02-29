@@ -61,7 +61,7 @@ a {
 
 
 .prodview {
-    width: 50%;
+    width: 85%;
     height: 900px;
     display: flex;
     flex-direction: row;
@@ -69,7 +69,7 @@ a {
 }
 
 .featured-continue {
-    width: 100%;
+    width: 85%;
     height: 30px;
     background-color: rgb(123, 167, 48);
     color: white;
@@ -89,15 +89,15 @@ a {
     width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
 .cbicons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 10px;
-    margin: 20px;
+    margin: 10px;
 
 }
 

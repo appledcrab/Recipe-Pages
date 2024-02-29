@@ -297,3 +297,4 @@ ul li{
       width: calc((var(--grams) / var(--max-grams)) * 100%);
   }
   }
+  
